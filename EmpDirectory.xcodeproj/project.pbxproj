@@ -20,6 +20,9 @@
 		27B27B4A2219D47F00A3EC37 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B27B492219D47F00A3EC37 /* AppConstants.swift */; };
 		27B27B4D2219EDC200A3EC37 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B27B4C2219EDC200A3EC37 /* EmployeeTableViewCell.swift */; };
 		27B27B4F2219EE2B00A3EC37 /* EmployeeTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B27B4E2219EE2B00A3EC37 /* EmployeeTableViewCellViewModel.swift */; };
+		27B27B52221A004100A3EC37 /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B27B51221A004100A3EC37 /* EmployeesViewController.swift */; };
+		27B27B55221A02D100A3EC37 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B27B54221A02D100A3EC37 /* EmployeeCell.swift */; };
+		27B27B59221A086D00A3EC37 /* AutoLayoutAchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B27B58221A086D00A3EC37 /* AutoLayoutAchors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		27B27B492219D47F00A3EC37 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		27B27B4C2219EDC200A3EC37 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		27B27B4E2219EE2B00A3EC37 /* EmployeeTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		27B27B51221A004100A3EC37 /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
+		27B27B54221A02D100A3EC37 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		27B27B58221A086D00A3EC37 /* AutoLayoutAchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutAchors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		27B27B1A2219739500A3EC37 /* EmpDirectory */ = {
 			isa = PBXGroup;
 			children = (
+				27B27B56221A085500A3EC37 /* Extensions */,
 				27B27B482219D46200A3EC37 /* AppConstants */,
 				27B27B3F2219744C00A3EC37 /* Models */,
 				27B27B3B221973C700A3EC37 /* AllScenes */,
@@ -116,6 +123,7 @@
 		27B27B3B221973C700A3EC37 /* AllScenes */ = {
 			isa = PBXGroup;
 			children = (
+				27B27B50221A002200A3EC37 /* EmployeesView */,
 				27B27B3C221973F400A3EC37 /* HomeView */,
 			);
 			path = AllScenes;
@@ -155,6 +163,39 @@
 				27B27B4E2219EE2B00A3EC37 /* EmployeeTableViewCellViewModel.swift */,
 			);
 			path = EmployeeCell;
+			sourceTree = "<group>";
+		};
+		27B27B50221A002200A3EC37 /* EmployeesView */ = {
+			isa = PBXGroup;
+			children = (
+				27B27B53221A02AA00A3EC37 /* EmployeeCell */,
+				27B27B51221A004100A3EC37 /* EmployeesViewController.swift */,
+			);
+			path = EmployeesView;
+			sourceTree = "<group>";
+		};
+		27B27B53221A02AA00A3EC37 /* EmployeeCell */ = {
+			isa = PBXGroup;
+			children = (
+				27B27B54221A02D100A3EC37 /* EmployeeCell.swift */,
+			);
+			path = EmployeeCell;
+			sourceTree = "<group>";
+		};
+		27B27B56221A085500A3EC37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27B27B57221A085D00A3EC37 /* AutoLayoutAnchors */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27B27B57221A085D00A3EC37 /* AutoLayoutAnchors */ = {
+			isa = PBXGroup;
+			children = (
+				27B27B58221A086D00A3EC37 /* AutoLayoutAchors.swift */,
+			);
+			path = AutoLayoutAnchors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,11 +302,14 @@
 				27B27B1E2219739500A3EC37 /* HomeViewController.swift in Sources */,
 				27B27B4D2219EDC200A3EC37 /* EmployeeTableViewCell.swift in Sources */,
 				27B27B4A2219D47F00A3EC37 /* AppConstants.swift in Sources */,
+				27B27B55221A02D100A3EC37 /* EmployeeCell.swift in Sources */,
 				27B27B412219745B00A3EC37 /* Employee.swift in Sources */,
 				27B27B3E2219743400A3EC37 /* HomeViewModel.swift in Sources */,
 				27B27B1C2219739500A3EC37 /* AppDelegate.swift in Sources */,
 				27B27B4F2219EE2B00A3EC37 /* EmployeeTableViewCellViewModel.swift in Sources */,
 				27B27B472219844600A3EC37 /* EmployeeDirectory.swift in Sources */,
+				27B27B59221A086D00A3EC37 /* AutoLayoutAchors.swift in Sources */,
+				27B27B52221A004100A3EC37 /* EmployeesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

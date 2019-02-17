@@ -11,6 +11,7 @@ struct Employee {
     var name:String!
     var birthYear:UInt!
     var salary:Double!
+    
     private init(){}
     
     init(name:String,birthYear:UInt) {
@@ -18,6 +19,9 @@ struct Employee {
         self.birthYear = birthYear
         self.salary = 1000
     }
+    /**
+     Formates Employee's salary in locale's currency
+     */
     func formattedSalary() -> String? {
         let numberForammter = NumberFormatter()
         numberForammter.locale = Locale.current
