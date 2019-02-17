@@ -17,12 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //Note Comment the following code if you want to run the storyboard version of the app
-        window = UIWindow()
-        window?.makeKeyAndVisible()
-        let rootControoler = EmployeesViewController()
-        let navigationController = UINavigationController.init(rootViewController: rootControoler)
-        window?.rootViewController = navigationController
+        //Note: Uncomment the following code if you want to run the storyboard version of the app
+        
+//        window = UIWindow()
+//        window?.makeKeyAndVisible()
+//        let rootControoler = EmployeesViewController()
+//        let navigationController = UINavigationController.init(rootViewController: rootControoler)
+//        window?.rootViewController = navigationController
         
         
         return true

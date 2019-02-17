@@ -123,8 +123,8 @@
 		27B27B3B221973C700A3EC37 /* AllScenes */ = {
 			isa = PBXGroup;
 			children = (
-				27B27B50221A002200A3EC37 /* EmployeesView */,
 				27B27B3C221973F400A3EC37 /* HomeView */,
+				27B27B50221A002200A3EC37 /* EmployeesView */,
 			);
 			path = AllScenes;
 			sourceTree = "<group>";
